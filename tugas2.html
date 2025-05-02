@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Contoh Halaman HTML</title>
+    <style>
+        
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    .navbar {
+      background-color: #333;
+      overflow: hidden;
+    }
+
+    .navbar a {
+      float: right;
+      display: block;
+      color: #f2f2f2;
+      text-align: center;
+      padding: 14px 20px;
+      text-decoration: none;
+      transition: background-color 0.3s;
+    }
+
+    .navbar a:hover {
+      background-color: #575757;
+      color: white;
+    }
+
+    .navbar a.active {
+      background-color: #04AA6D;
+      color: white;
+      float: left;
+    }
+
+    /* Responsif: untuk layar kecil */
+    @media screen and (max-width: 600px) {
+      .navbar a {
+        float: none;
+        width: 100%;
+        text-align: left;
+      }
+    }
+    /*Section 2*/
+    div.sesi2{
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        height: 200px;
+        align-items: center;
+        text-align: center;
+        padding: 20px;
+        border-bottom: 1px solid;
+    }
+
+    /*Section 3*/
+    div.sesi3{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr); /* 3 kolom */
+        grid-template-rows: repeat(2, 50px);  /* 2 baris dengan tinggi 150px */
+        gap: 10px;
+    }
+    .tentang{
+        text-align: center;
+        padding: 20px;
+    }
+    .grid-item{
+       background-color: #4CAF50;
+      color: white;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 20px;
+      border-radius: 8px;
+      height: 30px;
+    }
+    /*sesion 4*/
+    .porto{
+        text-align: center;
+        padding-top: 10px;
+        padding-bottom: 40px;
+        border-top: 1px solid;
+    }
+    .proyek{
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 10px;
+        text-align: center;
+    }
+    .foot{
+        background-color:#575757;
+        border-radius: 1px;
+        text-align: center;
+        height: 50px;
+        padding: 20px;
+        margin-bottom: 0px;
+        margin-top: 20px;
+    }
+    </style>
+</head>
+<body>
+
+<!-- Section 1: Menu / Navigasi -->
+<section>
+    <nav class="navbar">
+            <a href="#" class="active">Beranda</a>
+            <a href="#section2" class="a">Header</a>
+            <a href="#section3" class="a">Biodata</a>
+            <a href="#section4" class="a">Portofolio</a>
+    <nav>
+</section>
+
+<!-- Section 2: Judul di kiri, gambar di kanan -->
+<a name="section2"></a>
+<div class="sesi2">
+    <div class="subsesi">
+        <h2>Selamat Datang di Website Saya</h2>
+        <p >Ini adalah contoh header dengan dua kolom, kolom kiri berisi teks seperti ini.</p><br>
+        <button>Pelajari lebih lanjut</button>
+    </div>
+    <div class="gambar">
+        <img src="images.png" alt="Gambar">
+    </div>
+    </div>
+</div>
+
+<!-- Section 3: Biodata dengan 6 box -->
+<a name="section3"></a>
+<div class="tentang">
+    <h2>Aboutme</h2>
+    <p>A trief introcution about myself</p>
+</div>
+<div class="sesi3">
+        <div class="grid-item">Full Nmae</div>
+        <div class="grid-item">Educative</div>
+        <div class="grid-item">Pekerjaan</div>
+        <div class="grid-item">Contact</div>
+        <div class="grid-item">Hobi</div>
+        <div class="grid-item">Alamat</div>
+</div>
+
+<!-- Section 4: Portofolio -->
+<a name="section4"></a>
+        <div class="porto">
+            <h2>Portofolio</h2>
+        </div>
+<div class="proyek">
+        <div class="item">
+            <img src="proyek1.jpeg" alt="Gambar"><br>
+            <b>Proyek 1</b><br>
+            Deskripsi singkat proyek 1.
+        </div>
+        <div class="item">
+            <img src="proyek2.jpeg" alt="Gambar"><br>
+            <b>Proyek 2</b><br>
+            Deskripsi singkat proyek 2.
+        </div>
+        <div class="item">
+            <img src="Proyek3.jpeg" alt="Gambar"><br>
+            <b>Proyek 3</b><br>
+            Deskripsi singkat proyek 3.
+        </div>
+        <div class="item">
+            <img src="proyek4.jpeg" alt="Gambar"><br>
+            <b>Proyek 4</b><br>
+            Deskripsi singkat proyek 4.
+        </div>
+</div>
+<!--footer-->
+<div class="foot">&copy; 2025 All right Yannuar Fanrois</div>
+</body>
+</html>
